@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App-related Strings -->
+    <string name="app_name">My Application</string>
+    <string name="app_logo">App Logo</string>
+
+    <!-- Screen Text -->
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or_continue_with">Or continue with</string>
+    <string name="dont_have_account">Don’t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+
+    <!-- Social Login -->
+    <string name="google_login">Login with Google</string>
+    <string name="facebook_login">Login with Facebook</string>
+    <string name="apple_login">Login with Apple</string>
+</resources>

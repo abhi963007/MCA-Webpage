@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Similar head section as index.html -->
+</head>
+<body>
+    <!-- Similar sidebar structure -->
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Faculty Management</h1>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addFacultyModal">
+                Add New Faculty
+            </button>
+        </div>
+
+        <!-- Faculty List -->
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Department</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="facultyList">
+                    <!-- Faculty entries will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Add Faculty Modal -->
+        <div class="modal fade" id="addFacultyModal">
+            <!-- Modal content -->
+        </div>
+    </main>
+</body>
+</html> 
