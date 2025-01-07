@@ -1,0 +1,50 @@
+name: app
+type: php:8.2
+
+build:
+    flavor: none
+
+dependencies:
+    php:
+        composer/composer: '^2'
+
+runtime:
+    extensions:
+        - mysqli
+        - pdo_mysql
+        - opcache
+
+variables:
+    php:
+        display_errors: 0
+        error_reporting: E_ALL
+
+web:
+    locations:
+        "/":
+            root: "frontend"
+            index:
+                - index.php
+            allow: true
+            passthru: "/index.php"
+            rules:
+                \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg?)$:
+                    allow: true
+                ^/uploads/.*$:
+                    allow: true
+                    scripts: false
+
+disk: 2048
+
+mounts:
+    "frontend/uploads": "shared:files/uploads"
+
+relationships:
+    database: "db:mysql"
+
+hooks:
+    build: |
+        set -e
+        mkdir -p frontend/uploads
+    deploy: |
+        set -e 

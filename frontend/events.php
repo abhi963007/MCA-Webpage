@@ -103,17 +103,17 @@ $result = $conn->query($sql);
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
                                     <li class="mil-has-children">
-                                        <a href="#.">Homepage</a>
+                                        <a href="index.php">Homepage</a>
                                         <ul>
-                                            <li><a href="home-1.html">Overview</a></li>
+                                            <li><a href="services.html">Overview</a></li>
                                             <li><a href="home-2.html">About MCA</a></li>
                                             <li><a href="portfolio-3.html">Department Highlights</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="#.">Contact</a>
+                                        <a href="contact.html">Contact</a>
                                         <ul>
-                                            <li><a href="faculty.html">Faculty Directory</a></li>
+                                            <li><a href="team.php">Faculty Directory</a></li>
                                             <li><a href="contact.html">Contact Info</a></li>
                                         </ul>
                                     </li>

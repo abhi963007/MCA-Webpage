@@ -192,10 +192,6 @@ $result = $conn->query($sql);
                 <i class="fas fa-tachometer-alt"></i>
                 <span>Dashboard</span>
             </a>
-            <a href="manage_courses.php" class="nav-link">
-                <i class="fas fa-graduation-cap"></i>
-                <span>Courses</span>
-            </a>
             <a href="manage_events.php" class="nav-link">
                 <i class="fas fa-calendar-alt"></i>
                 <span>Events</span>

@@ -13,9 +13,6 @@
                     <a class="nav-link" href="manage_faculty.php">Faculty</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="manage_courses.php">Courses</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="manage_gallery.php">Gallery</a>
                 </li>
             </ul>

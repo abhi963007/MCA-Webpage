@@ -98,14 +98,13 @@ if ($conn->connect_error) {
                                     <li class="mil-has-children mil-active">
                                         <a href="#.">Homepage</a>
                                         <ul>
-                                            <li><a href="index.html">Main Page</a></li>
+                                            <li><a href="index.php">Main Page</a></li>
                                             <li><a href="admin/admin_login.php">Admin Portal</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children">
                                         <a href="#.">Academics</a>
                                         <ul>
-                                            <li><a href="courses.html">Courses</a></li>
                                             <li><a href="services.html">Syllabus</a></li>
                                             <li><a href="team.php">Faculty</a></li>
                                         </ul>
@@ -251,9 +250,6 @@ if ($conn->connect_error) {
 
                                 <a href="services.html" class="mil-button mil-arrow-place mil-btn-space">
                                     <span>Overview</span>
-                                </a>
-                                <a href="mewsunfold.com/index.html" class="mil-link mil-muted mil-arrow-place">
-                                    <span>Educational Notes</span>
                                 </a>
 
                                 <div class="mil-circle-text">
@@ -679,6 +675,13 @@ if ($conn->connect_error) {
                 <!-- hidden elements -->
                 <div class="mil-hidden-elements">
                     <div class="mil-dodecahedron">
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                         <div class="mil-pentagon">
                             <div></div>
                             <div></div>

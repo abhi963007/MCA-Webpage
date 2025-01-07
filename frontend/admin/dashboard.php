@@ -7,9 +7,8 @@ if (!isset($_SESSION['admin_logged_in'])) {
 
 include 'includes/db_connect.php';
 
-// Fetch quick stats
+// Fetch quick stats - removing courses
 $stats = [
-    'courses' => $conn->query("SELECT COUNT(*) as count FROM courses")->fetch_assoc()['count'],
     'faculty' => $conn->query("SELECT COUNT(*) as count FROM faculty")->fetch_assoc()['count'],
     'events' => $conn->query("SELECT COUNT(*) as count FROM events")->fetch_assoc()['count'],
     'gallery' => $conn->query("SELECT COUNT(*) as count FROM gallery")->fetch_assoc()['count'],
@@ -158,10 +157,6 @@ $recent_events = $conn->query("SELECT * FROM events ORDER BY event_date DESC LIM
                 <i class="fas fa-tachometer-alt"></i>
                 <span>Dashboard</span>
             </a>
-            <a href="manage_courses.php" class="nav-link">
-                <i class="fas fa-graduation-cap"></i>
-                <span>Courses</span>
-            </a>
             <a href="manage_faculty.php" class="nav-link">
                 <i class="fas fa-chalkboard-teacher"></i>
                 <span>Faculty</span>
@@ -208,16 +203,7 @@ $recent_events = $conn->query("SELECT * FROM events ORDER BY event_date DESC LIM
 
         <!-- Stats Cards -->
         <div class="row mb-4">
-            <div class="col-md-3 mb-4">
-                <div class="stat-card">
-                    <div class="icon bg-purple">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <p class="text-muted mb-2">Total Courses</p>
-                    <h3><?php echo $stats['courses']; ?></h3>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
+            <div class="col-md-4 mb-4">
                 <div class="stat-card">
                     <div class="icon bg-blue">
                         <i class="fas fa-chalkboard-teacher"></i>
@@ -226,7 +212,7 @@ $recent_events = $conn->query("SELECT * FROM events ORDER BY event_date DESC LIM
                     <h3><?php echo $stats['faculty']; ?></h3>
                 </div>
             </div>
-            <div class="col-md-3 mb-4">
+            <div class="col-md-4 mb-4">
                 <div class="stat-card">
                     <div class="icon bg-orange">
                         <i class="fas fa-calendar-alt"></i>
@@ -235,7 +221,7 @@ $recent_events = $conn->query("SELECT * FROM events ORDER BY event_date DESC LIM
                     <h3><?php echo $stats['events']; ?></h3>
                 </div>
             </div>
-            <div class="col-md-3 mb-4">
+            <div class="col-md-4 mb-4">
                 <div class="stat-card">
                     <div class="icon bg-info bg-opacity-25 text-info">
                         <i class="fas fa-images"></i>
