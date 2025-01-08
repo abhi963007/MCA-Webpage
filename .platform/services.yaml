@@ -1,4 +1,0 @@
-# Define the MySQL service
-db:
-    type: mysql:10.4
-    disk: 2048 
